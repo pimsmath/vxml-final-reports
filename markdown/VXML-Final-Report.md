@@ -11,13 +11,18 @@ header-includes:
   - \usepackage{fancyhdr,graphicx}
   - \setlength{\headheight}{64pt}
   - \setlength{\footskip}{14pt}
+  - \renewcommand{\footrulewidth}{0.4pt}
   - \renewcommand{\headrulewidth}{0pt}
-  - \renewcommand{\footrulewidth}{0pt}
   - \fancyhead[L]{}
   - \fancyhead[C]{
       \includegraphics[width=6cm]{pimslogo}
     }
   - \fancyhead[R]{}
+  - \fancyfoot[L]{}
+  - \fancyfoot[R]{}
+  - \fancyfoot[C]{}
+  - \fancyfoot[L]{\textit{Date:} 2022-2023.}
+  - \fancyfootoffset[RO,LE]{-0.7\textwidth}
   - \pagestyle{plain}
   - \hypersetup{colorlinks=true}
 include-before:
