@@ -7,8 +7,11 @@ author:
 - etc.
 linkcolor: blue
 output: pdf_document
+numbersections: true
 header-includes:
   - \usepackage{fancyhdr,graphicx}
+  - \renewcommand{\footrule}{\hrule width 0.2\textwidth\hfil}
+    \renewcommand{\headrulewidth}{0.4pt}
   - \setlength{\headheight}{64pt}
   - \setlength{\footskip}{14pt}
   - \renewcommand{\footrulewidth}{0.4pt}
@@ -20,9 +23,8 @@ header-includes:
   - \fancyhead[R]{}
   - \fancyfoot[L]{}
   - \fancyfoot[R]{}
-  - \fancyfoot[C]{}
-  - \fancyfoot[L]{\textit{Date:} 2022-2023.}
-  - \fancyfootoffset[RO,LE]{-0.7\textwidth}
+  - \fancyfoot[C]{\thepage}
+  - \fancyfoot[L]{\qquad\textit{Date:} 2022-2023.}
   - \pagestyle{plain}
   - \hypersetup{colorlinks=true}
 include-before:
@@ -43,6 +45,8 @@ Describe carefully the initial problem you worked on.
 Describe how the problem evolved as your research team worked on it.
 What directions did you pursue? What did you learn?
 
+\newpage
+
 # Progress
 
 Describe partial (or full) answers to the questions you started with, or
@@ -59,10 +63,12 @@ reader.
 Describe the theoretical work you did on the problem, perhaps
 illustrating with a few well-chosen examples.
 
+\newpage
+
 # Future directions
 
 Describe where the project could evolve moving forward.
 
-::: {.thebibliography}
-99
-:::
+\newpage
+
+# Bibliography
